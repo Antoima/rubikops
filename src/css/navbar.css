@@ -1,0 +1,11 @@
+/* Estilo para el efecto de cambio de color al hacer scroll */
+.navbar {
+  background-color: rgba(26, 4, 93, 0.9); /* Azul oscuro */
+  transition: background-color 0.3s, color 0.3s;
+}
+.navbar.scrolled {
+  background-color: rgba(26, 4, 93, 0.1);
+}
+.navbar.scrolled a {
+  color: #0c022c; /* Cambia el color del texto al hacer scroll */
+}
