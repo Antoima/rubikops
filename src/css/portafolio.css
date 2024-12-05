@@ -1,0 +1,36 @@
+.swiper-container {
+  position: relative;
+}
+.swiper-container {
+  width: 100%;
+  overflow: hidden; /* Asegúrate de que el contenedor no permita desbordamiento */
+}
+
+.swiper-slide {
+  width: 100%; /* Asegúrate de que cada diapositiva ocupe el 100% del contenedor */
+  flex-shrink: 0; /* Evita que las diapositivas se reduzcan */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.swiper-button-next,
+.swiper-button-prev {
+  color: #000; /* Cambia el color según tus necesidades */
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+}
+
+.swiper-button-next {
+  right: 10px; /* Ajusta la posición según tus necesidades */
+}
+
+.swiper-button-prev {
+  left: 10px; /* Ajusta la posición según tus necesidades */
+}
+
+.swiper-pagination {
+  bottom: 10px; /* Ajusta la posición según tus necesidades */
+  text-align: center;
+}
