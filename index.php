@@ -3,38 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página de Ejemplo con Tailwind</title>
+    <title>Rubikops</title>
     <!-- Incluye Tailwind CSS desde un CDN -->
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <!-- Incluye Swiper CSS desde un CDN -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <!-- Incluye el archivo CSS externo -->
     <link href="src/css/navbar.css" rel="stylesheet">
 </head>
 <body class="bg-gray-100">
-    <header>
-        <nav class="navbar fixed w-full z-10 top-0 shadow-md">
-            <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
-                <div class="relative flex items-center justify-between h-16">
-                    <div class="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
-                        <div class="flex-shrink-0">
-                            <img class="h-8 w-auto" src="src/img/rubikops_logo.png" alt="Rubik Logo">
-                        </div>
-                        <div class="hidden sm:block sm:ml-auto">
-                            <div class="flex space-x-4">
-                                <a href="#" class="text-white hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">INICIO</a>
-                                <a href="#" class="text-white hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">SERVICIOS</a>
-                                <a href="#" class="text-white hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">QUIENES SOMOS</a>
-                                <a href="#" class="text-white hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">CONTACTANOS</a>
-                            </div>
+<header>
+    <nav class="navbar fixed w-full z-20 top-0 shadow-md">
+        <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
+            <div class="relative flex items-center justify-between h-16">
+                <div class="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
+                    <div class="flex-shrink-0">
+                        <img class="h-8 w-auto" src="src/img/rubikops_logo.png" alt="Rubik Logo">
+                    </div>
+                    <div class="hidden sm:block sm:ml-auto">
+                        <div class="flex space-x-4">
+                            <a href="#" class="text-white hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">INICIO</a>
+                            <a href="#servicios" class="text-white hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">SERVICIOS</a>
+                            <a href="#" class="text-white hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">QUIENES SOMOS</a>
+                            <a href="#" class="text-white hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">CONTACTANOS</a>
                         </div>
                     </div>
+                    <!-- Botón de menú para dispositivos móviles -->
+                    <button id="menu-toggle" class="sm:hidden text-white px-3 py-2 rounded-md text-sm font-medium">
+                        Menú
+                    </button>
                 </div>
             </div>
-        </nav>
-    </header>
+            <!-- Menú desplegable para dispositivos móviles -->
+            <div id="menu" class="hidden sm:hidden">
+                <a href="#" class="block text-white hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-base font-medium">INICIO</a>
+                <a href="#servicios" class="block text-white hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-base font-medium">SERVICIOS</a>
+                <a href="#" class="block text-white hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-base font-medium">QUIENES SOMOS</a>
+                <a href="#" class="block text-white hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-base font-medium">CONTACTANOS</a>
+            </div>
+        </div>
+    </nav>
+</header>
     <main>
         <section class="relative bg-cover bg-center h-screen" style="background-image: url('src/img/banner_principal.png');">
             <div class="absolute inset-0 bg-black opacity-10"></div>
-            <div class="relative z-10 flex items-center justify-start h-full text-white">
+            <div class="relative z-0 flex items-center justify-start h-full text-white">
                 <div class="w-1/2 text-center">
                     <p class="text-lg mb-2" style="color: rgb(102,252,241);">TU SUEÑO CON VIDA DIGITAL</p>
                     <h1 class="text-4xl font-bold mb-4 uppercase">¡Conquistemos el mundo digital!</h1>
@@ -42,7 +55,8 @@
                 </div>
             </div>
         </section>
-        <section class="py-12 bg-white">
+          <!-- Nueva sección de servicios -->
+        <section id="servicios" class="py-12 bg-white">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <h2 class="text-3xl font-bold text-center mb-8">Nuestros Servicios</h2>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -79,12 +93,57 @@
                 </div>
             </div>
         </section>
-        <!-- ... otras secciones de contenido -->
+         <!-- Nueva sección de portafolio -->
+    <section id="portafolio" class="py-12 bg-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center mb-8">Nuestro Portafolio</h2>
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <!-- Repite este bloque para cada elemento del portafolio -->
+                    <div class="swiper-slide bg-white p-6 rounded-lg shadow-lg">
+                        <img src="src/img/portfolio1.png" alt="Proyecto 1" class="h-48 w-full object-cover mb-4">
+                        <h3 class="text-xl font-semibold mb-2">Proyecto 1</h3>
+                        <p>Descripción breve del proyecto 1.</p>
+                    </div>
+                    <div class="swiper-slide bg-white p-6 rounded-lg shadow-lg">
+                        <img src="src/img/portfolio2.png" alt="Proyecto 2" class="h-48 w-full object-cover mb-4">
+                        <h3 class="text-xl font-semibold mb-2">Proyecto 2</h3>
+                        <p>Descripción breve del proyecto 2.</p>
+                    </div>
+                    <div class="swiper-slide bg-white p-6 rounded-lg shadow-lg">
+                        <img src="src/img/portfolio3.png" alt="Proyecto 3" class="h-48 w-full object-cover mb-4">
+                        <h3 class="text-xl font-semibold mb-2">Proyecto 3</h3>
+                        <p>Descripción breve del proyecto 3.</p>
+                    </div>
+                    <div class="swiper-slide bg-white p-6 rounded-lg shadow-lg">
+                        <img src="src/img/portfolio4.png" alt="Proyecto 4" class="h-48 w-full object-cover mb-4">
+                        <h3 class="text-xl font-semibold mb-2">Proyecto 4</h3>
+                        <p>Descripción breve del proyecto 4.</p>
+                    </div>
+                    <div class="swiper-slide bg-white p-6 rounded-lg shadow-lg">
+                        <img src="src/img/portfolio5.png" alt="Proyecto 5" class="h-48 w-full object-cover mb-4">
+                        <h3 class="text-xl font-semibold mb-2">Proyecto 5</h3>
+                        <p>Descripción breve del proyecto 5.</p>
+                    </div>
+                    <div class="swiper-slide bg-white p-6 rounded-lg shadow-lg">
+                        <img src="src/img/portfolio6.png" alt="Proyecto 6" class="h-48 w-full object-cover mb-4">
+                        <h3 class="text-xl font-semibold mb-2">Proyecto 6</h3>
+                        <p>Descripción breve del proyecto 6.</p>
+                    </div>
+                </div>
+                <!-- Agrega los controles de navegación si lo deseas -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
     </main>
     <footer>
         <!-- Contenido del pie de página -->
     </footer>
     <script src="src/js/navbar.js"></script>
-
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+   <script src="src/js/portafolio.js"></script>
 </body>
 </html>
