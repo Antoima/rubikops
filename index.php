@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <!-- Incluye el archivo CSS externo -->
     <link href="src/css/navbar.css" rel="stylesheet">
+    <link href="src/css/portafolio.css" rel="stylesheet">
 </head>
 <body class="bg-gray-100">
 <header>
@@ -47,7 +48,7 @@
     <main>
         <section class="relative bg-cover bg-center h-screen" style="background-image: url('src/img/banner_principal.png');">
             <div class="absolute inset-0 bg-black opacity-10"></div>
-            <div class="relative z-0 flex items-center justify-start h-full text-white">
+            <div class="relative flex items-center justify-start h-full text-white">
                 <div class="w-1/2 text-center">
                     <p class="text-lg mb-2" style="color: rgb(102,252,241);">TU SUEÑO CON VIDA DIGITAL</p>
                     <h1 class="text-4xl font-bold mb-4 uppercase">¡Conquistemos el mundo digital!</h1>
@@ -94,12 +95,11 @@
             </div>
         </section>
          <!-- Nueva sección de portafolio -->
-    <section id="portafolio" class="py-12 bg-gray-100">
+         <section id="portafolio" class="py-12 bg-gray-100">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 class="text-3xl font-bold text-center mb-8">Nuestro Portafolio</h2>
             <div class="swiper-container">
                 <div class="swiper-wrapper">
-                    <!-- Repite este bloque para cada elemento del portafolio -->
                     <div class="swiper-slide bg-white p-6 rounded-lg shadow-lg">
                         <img src="src/img/portfolio1.png" alt="Proyecto 1" class="h-48 w-full object-cover mb-4">
                         <h3 class="text-xl font-semibold mb-2">Proyecto 1</h3>
