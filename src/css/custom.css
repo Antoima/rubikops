@@ -6,3 +6,21 @@
 .bg-portafolio {
   background-color: rgba(35, 35, 35, 1);
 }
+
+@keyframes fall {
+  0% {
+    opacity: 0;
+    transform: translateY(-200px) translateX(-100px);
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(0) translateX(0);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.animate-fall {
+  animation: fall 3s ease-out infinite;
+}

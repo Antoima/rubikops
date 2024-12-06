@@ -98,6 +98,20 @@
                 </div>
             </div>
         </section>
+
+<!-- Línea o sección con fondo azul y texto animado -->
+<div class="bg-black h-10 flex items-center justify-center relative overflow-hidden">
+    <span class="text-white text-2xl font-bold">
+        <span class="animate-fall" style="animation-delay: 0s;">R</span>
+        <span class="animate-fall" style="animation-delay: 0.2s;">u</span>
+        <span class="animate-fall" style="animation-delay: 0.4s;">b</span>
+        <span class="animate-fall" style="animation-delay: 0.6s;">i</span>
+        <span class="animate-fall" style="animation-delay: 0.8s;">k</span>
+        <span class="animate-fall" style="animation-delay: 1s;">o</span>
+        <span class="animate-fall" style="animation-delay: 1.2s;">p</span>
+        <span class="animate-fall" style="animation-delay: 1.4s;">s</span>
+    </span>
+</div>
          <!-- Nueva sección de portafolio -->
          <section id="portafolio" class="py-40 bg-portafolio">
              <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
