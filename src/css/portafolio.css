@@ -1,7 +1,5 @@
 .swiper-container {
   position: relative;
-}
-.swiper-container {
   width: 100%;
   overflow: hidden; /* Asegúrate de que el contenedor no permita desbordamiento */
 }
@@ -13,6 +11,7 @@
   justify-content: center;
   align-items: center;
 }
+
 .swiper-button-next,
 .swiper-button-prev {
   color: #000; /* Cambia el color según tus necesidades */
@@ -33,4 +32,20 @@
 .swiper-pagination {
   bottom: 10px; /* Ajusta la posición según tus necesidades */
   text-align: center;
+}
+
+.perspective {
+  perspective: 1000px;
+}
+
+.transform-style-3d {
+  transform-style: preserve-3d;
+}
+
+.backface-hidden {
+  backface-visibility: hidden;
+}
+
+.rotate-y-180 {
+  transform: rotateY(180deg);
 }

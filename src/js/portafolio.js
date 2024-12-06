@@ -2,6 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
   var swiper = new Swiper(".swiper-container", {
     slidesPerView: 1, // Muestra una diapositiva a la vez
     spaceBetween: 10, // Espacio entre diapositivas
+    loop: true, // Habilita el bucle infinito
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
