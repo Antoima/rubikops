@@ -1,0 +1,8 @@
+/* Clase personalizada para el fondo de la sección de servicios */
+.bg-navbar-color {
+  background-color: rgba(26, 4, 93, 1);
+}
+
+.bg-portafolio {
+  background-color: rgba(35, 35, 35, 1);
+}

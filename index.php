@@ -11,8 +11,12 @@
     <!-- Incluye el archivo CSS externo -->
     <link href="src/css/navbar.css" rel="stylesheet">
     <link href="src/css/portafolio.css" rel="stylesheet">
+    <!-- Incluye el archivo CSS externo config -->
+    <link href="src/css/custom.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
 </head>
-<body class="bg-gray-100">
+<body class="bg-gray-10">
 <header>
     <nav class="navbar fixed w-full z-20 top-0 shadow-md">
         <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
@@ -57,37 +61,37 @@
             </div>
         </section>
           <!-- Nueva sección de servicios -->
-        <section id="servicios" class="py-12 bg-white">
+        <section id="servicios" class="py-12 bg-navbar-color">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <h2 class="text-3xl font-bold text-center mb-8">Nuestros Servicios</h2>
+                <h2 class="text-3xl font-bold text-center mb-8 text-white">Nuestros Servicios</h2>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     <div class="bg-gray-100 p-6 rounded-lg shadow-lg">
-                        <img src="src/img/branding_logo.png" alt="Branding" class="h-12 w-auto mb-4">
+                        <i class="fas fa-bullhorn text-2xl mb-4"></i> <!-- Icono de ejemplo -->
                         <h3 class="text-xl font-semibold mb-2">Branding</h3>
                         <p>Te ayudamos a establecer tu marca. Cuéntanos como deseas tu logo, tu slogan, qué quieres proyectar, y nosotros nos encargamos del resto.</p>
                     </div>
                     <div class="bg-gray-100 p-6 rounded-lg shadow-lg">
-                        <img src="src/img/web_design_logo.png" alt="Diseño Web" class="h-12 w-auto mb-4">
+                        <i class="fas fa-laptop-code text-2xl mb-4"></i> <!-- Icono de ejemplo -->
                         <h3 class="text-xl font-semibold mb-2">Diseño Web</h3>
                         <p>La visualización de la página web es muy importante. Damos ideas de diseño y de creación de páginas web en HTML y Wordpress.</p>
                     </div>
                     <div class="bg-gray-100 p-6 rounded-lg shadow-lg">
-                        <img src="src/img/platform_management_logo.png" alt="Manejo de Plataformas" class="h-12 w-auto mb-4">
+                        <i class="fas fa-server text-2xl mb-4"></i> <!-- Icono de ejemplo -->
                         <h3 class="text-xl font-semibold mb-2">Manejo de Plataformas</h3>
                         <p>Asesoramos con diferentes plataformas de Hosting y servicios, como GoDaddy o Google Workspace.</p>
                     </div>
                     <div class="bg-gray-100 p-6 rounded-lg shadow-lg">
-                        <img src="src/img/digital_marketing_logo.png" alt="Marketing Digital" class="h-12 w-auto mb-4">
+                        <i class="fas fa-chart-line text-2xl mb-4"></i> <!-- Icono de ejemplo -->
                         <h3 class="text-xl font-semibold mb-2">Marketing Digital</h3>
                         <p>¿Quieres impulsar tu negocio en las redes? ¿Quieres aumentar tus ingresos con la promoción de productos en redes? ¡Te asesoramos!</p>
                     </div>
                     <div class="bg-gray-100 p-6 rounded-lg shadow-lg">
-                        <img src="src/img/graphic_design_logo.png" alt="Diseño Gráfico y Publicitario" class="h-12 w-auto mb-4">
+                        <i class="fas fa-paint-brush text-2xl mb-4"></i> <!-- Icono de ejemplo -->
                         <h3 class="text-xl font-semibold mb-2">Diseño Gráfico y Publicitario</h3>
                         <p>Si necesitas ayuda con mejores gráficos, imágenes, videos, puedes consultarnos sin ningún problema.</p>
                     </div>
                     <div class="bg-gray-100 p-6 rounded-lg shadow-lg">
-                        <img src="src/img/app_development_logo.png" alt="Desarrollo de Aplicaciones" class="h-12 w-auto mb-4">
+                        <i class="fas fa-mobile-alt text-2xl mb-4"></i> <!-- Icono de ejemplo -->
                         <h3 class="text-xl font-semibold mb-2">Desarrollo de Aplicaciones</h3>
                         <p>En desarrollo. Próximamente tendremos servicio de creación de aplicaciones en algunos lenguajes.</p>
                     </div>
@@ -95,49 +99,103 @@
             </div>
         </section>
          <!-- Nueva sección de portafolio -->
-         <section id="portafolio" class="py-12 bg-gray-100">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="text-3xl font-bold text-center mb-8">Nuestro Portafolio</h2>
-            <div class="swiper-container">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide bg-white p-6 rounded-lg shadow-lg">
-                        <img src="src/img/portfolio1.png" alt="Proyecto 1" class="h-48 w-full object-cover mb-4">
-                        <h3 class="text-xl font-semibold mb-2">Proyecto 1</h3>
-                        <p>Descripción breve del proyecto 1.</p>
-                    </div>
-                    <div class="swiper-slide bg-white p-6 rounded-lg shadow-lg">
-                        <img src="src/img/portfolio2.png" alt="Proyecto 2" class="h-48 w-full object-cover mb-4">
-                        <h3 class="text-xl font-semibold mb-2">Proyecto 2</h3>
-                        <p>Descripción breve del proyecto 2.</p>
-                    </div>
-                    <div class="swiper-slide bg-white p-6 rounded-lg shadow-lg">
-                        <img src="src/img/portfolio3.png" alt="Proyecto 3" class="h-48 w-full object-cover mb-4">
-                        <h3 class="text-xl font-semibold mb-2">Proyecto 3</h3>
-                        <p>Descripción breve del proyecto 3.</p>
-                    </div>
-                    <div class="swiper-slide bg-white p-6 rounded-lg shadow-lg">
-                        <img src="src/img/portfolio4.png" alt="Proyecto 4" class="h-48 w-full object-cover mb-4">
-                        <h3 class="text-xl font-semibold mb-2">Proyecto 4</h3>
-                        <p>Descripción breve del proyecto 4.</p>
-                    </div>
-                    <div class="swiper-slide bg-white p-6 rounded-lg shadow-lg">
-                        <img src="src/img/portfolio5.png" alt="Proyecto 5" class="h-48 w-full object-cover mb-4">
-                        <h3 class="text-xl font-semibold mb-2">Proyecto 5</h3>
-                        <p>Descripción breve del proyecto 5.</p>
-                    </div>
-                    <div class="swiper-slide bg-white p-6 rounded-lg shadow-lg">
-                        <img src="src/img/portfolio6.png" alt="Proyecto 6" class="h-48 w-full object-cover mb-4">
-                        <h3 class="text-xl font-semibold mb-2">Proyecto 6</h3>
-                        <p>Descripción breve del proyecto 6.</p>
-                    </div>
-                </div>
-                <!-- Agrega los controles de navegación si lo deseas -->
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-pagination"></div>
-            </div>
-        </div>
-    </section>
+         <section id="portafolio" class="py-40 bg-portafolio">
+             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+             <div class="flex items-center mb-8">
+    <h2 class="text-3xl font-bold text-white relative pl-10">
+        <span class="absolute left-0 top-1/2 transform -translate-y-1/2 h-1 w-8 bg-blue-500"></span>
+        Portafolio
+    </h2>
+    <a href="#" class="ml-auto px-6 py-3 border-2 border-blue-500 text-white font-semibold rounded-full hover:bg-blue-600" style="border-color: rgb(102,252,241);">View All</a>
+</div>
+                       <div class="swiper-container py-20">
+                     <div class="swiper-wrapper">
+                         <div class="swiper-slide group perspective bg-white p-6 rounded-lg shadow-lg">
+                             <div class="relative transform-style-3d group-hover:rotate-y-180 duration-700 w-full h-64">
+                                 <div class="absolute backface-hidden w-full h-full">
+                                     <img src="src/img/portfolio1.png" alt="Proyecto 1" class="h-48 w-full object-cover mb-4">
+                                     <h3 class="text-xl font-semibold mb-2">Proyecto 1</h3>
+                                     <p>Descripción breve del proyecto 1.</p>
+                                 </div>
+                                 <div class="absolute rotate-y-180 backface-hidden w-full h-full bg-gray-200 p-6 rounded-lg">
+                                     <h3 class="text-xl font-semibold mb-2">Detalles del Proyecto 1</h3>
+                                     <p>Más información sobre el proyecto 1.</p>
+                                 </div>
+                             </div>
+                         </div>
+                         <div class="swiper-slide group perspective bg-white p-6 rounded-lg shadow-lg">
+                             <div class="relative transform-style-3d group-hover:rotate-y-180 duration-700 w-full h-64">
+                                 <div class="absolute backface-hidden w-full h-full">
+                                     <img src="src/img/portfolio2.png" alt="Proyecto 2" class="h-48 w-full object-cover mb-4">
+                                     <h3 class="text-xl font-semibold mb-2">Proyecto 2</h3>
+                                     <p>Descripción breve del proyecto 2.</p>
+                                 </div>
+                                 <div class="absolute rotate-y-180 backface-hidden w-full h-full bg-gray-200 p-6 rounded-lg">
+                                     <h3 class="text-xl font-semibold mb-2">Detalles del Proyecto 2</h3>
+                                     <p>Más información sobre el proyecto 2.</p>
+                                 </div>
+                             </div>
+                         </div>
+                         <div class="swiper-slide group perspective bg-white p-6 rounded-lg shadow-lg">
+                             <div class="relative transform-style-3d group-hover:rotate-y-180 duration-700 w-full h-64">
+                                 <div class="absolute backface-hidden w-full h-full">
+                                     <img src="src/img/portfolio3.png" alt="Proyecto 3" class="h-48 w-full object-cover mb-4">
+                                     <h3 class="text-xl font-semibold mb-2">Proyecto 3</h3>
+                                     <p>Descripción breve del proyecto 3.</p>
+                                 </div>
+                                 <div class="absolute rotate-y-180 backface-hidden w-full h-full bg-gray-200 p-6 rounded-lg">
+                                     <h3 class="text-xl font-semibold mb-2">Detalles del Proyecto 3</h3>
+                                     <p>Más información sobre el proyecto 3.</p>
+                                 </div>
+                             </div>
+                         </div>
+                         <div class="swiper-slide group perspective bg-white p-6 rounded-lg shadow-lg">
+                             <div class="relative transform-style-3d group-hover:rotate-y-180 duration-700 w-full h-64">
+                                 <div class="absolute backface-hidden w-full h-full">
+                                     <img src="src/img/portfolio4.png" alt="Proyecto 4" class="h-48 w-full object-cover mb-4">
+                                     <h3 class="text-xl font-semibold mb-2">Proyecto 4</h3>
+                                     <p>Descripción breve del proyecto 4.</p>
+                                 </div>
+                                 <div class="absolute rotate-y-180 backface-hidden w-full h-full bg-gray-200 p-6 rounded-lg">
+                                     <h3 class="text-xl font-semibold mb-2">Detalles del Proyecto 4</h3>
+                                     <p>Más información sobre el proyecto 4.</p>
+                                 </div>
+                             </div>
+                         </div>
+                         <div class="swiper-slide group perspective bg-white p-6 rounded-lg shadow-lg">
+                             <div class="relative transform-style-3d group-hover:rotate-y-180 duration-700 w-full h-64">
+                                 <div class="absolute backface-hidden w-full h-full">
+                                     <img src="src/img/portfolio5.png" alt="Proyecto 5" class="h-48 w-full object-cover mb-4">
+                                     <h3 class="text-xl font-semibold mb-2">Proyecto 5</h3>
+                                     <p>Descripción breve del proyecto 5.</p>
+                                 </div>
+                                 <div class="absolute rotate-y-180 backface-hidden w-full h-full bg-gray-200 p-6 rounded-lg">
+                                     <h3 class="text-xl font-semibold mb-2">Detalles del Proyecto 5</h3>
+                                     <p>Más información sobre el proyecto 5.</p>
+                                 </div>
+                             </div>
+                         </div>
+                         <div class="swiper-slide group perspective bg-white p-6 rounded-lg shadow-lg">
+                             <div class="relative transform-style-3d group-hover:rotate-y-180 duration-700 w-full h-64">
+                                 <div class="absolute backface-hidden w-full h-full">
+                                     <img src="src/img/portfolio6.png" alt="Proyecto 6" class="h-48 w-full object-cover mb-4">
+                                     <h3 class="text-xl font-semibold mb-2">Proyecto 6</h3>
+                                     <p>Descripción breve del proyecto 6.</p>
+                                 </div>
+                                 <div class="absolute rotate-y-180 backface-hidden w-full h-full bg-gray-200 p-6 rounded-lg">
+                                     <h3 class="text-xl font-semibold mb-2">Detalles del Proyecto 6</h3>
+                                     <p>Más información sobre el proyecto 6.</p>
+                                 </div>
+                             </div>
+                         </div>
+                     </div>
+                     <!-- Agrega los controles de navegación si lo deseas -->
+                     <div class="swiper-button-next"></div>
+                     <div class="swiper-button-prev"></div>
+                     <div class="swiper-pagination"></div>
+                 </div>
+             </div>
+         </section>
     </main>
     <footer>
         <!-- Contenido del pie de página -->
