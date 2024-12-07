@@ -9,6 +9,7 @@
 .bg-color-global {
   background-color: rgb(102, 252, 241);
 }
+
 @keyframes fall {
   0% {
     opacity: 0;
