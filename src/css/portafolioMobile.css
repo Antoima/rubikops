@@ -1,0 +1,20 @@
+@media (max-width: 768px) {
+  .swiper-slide .overlay.active .project-type {
+    opacity: 1; /* Muestra el texto al tocar */
+  }
+
+  /* Estilo para el modal */
+  #projectModal {
+    display: none; /* Oculto por defecto */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.75);
+    align-items: center;
+    justify-content: center;
+    z-index: 30;
+    overflow-y: auto; /* Asegúrate de que el contenido sea desplazable */
+  }
+}
