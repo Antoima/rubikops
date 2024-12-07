@@ -6,7 +6,9 @@
 .bg-portafolio {
   background-color: rgba(35, 35, 35, 1);
 }
-
+.bg-color-global {
+  background-color: rgb(102, 252, 241);
+}
 @keyframes fall {
   0% {
     opacity: 0;

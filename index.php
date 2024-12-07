@@ -113,15 +113,15 @@
     </span>
 </div>
          <!-- Nueva sección de portafolio -->
-         <section id="portafolio" class="py-40 bg-portafolio">
+         <section id="portafolio" class="py-24 bg-portafolio">
              <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
              <div class="flex items-center mb-8">
-    <h2 class="text-3xl font-bold text-white relative pl-10">
-        <span class="absolute left-0 top-1/2 transform -translate-y-1/2 h-1 w-8 bg-blue-500"></span>
+    <h2 class="text-5xl font-bold text-white relative pl-10">
+        <span class="absolute left-0 top-1/2 transform -translate-y-1/2 h-1 w-8 bg-color-global"></span>
         Portafolio
     </h2>
     <a href="#" class="ml-auto px-6 py-3 border-2 border-blue-500 text-white font-semibold rounded-full hover:bg-blue-600" style="border-color: rgb(102,252,241);">View All</a>
-</div>
+ </div>
                        <div class="swiper-container py-20">
                      <div class="swiper-wrapper">
                          <div class="swiper-slide group perspective bg-white p-6 rounded-lg shadow-lg">
@@ -208,6 +208,10 @@
                      <div class="swiper-button-prev"></div>
                      <div class="swiper-pagination"></div>
                  </div>
+                                 <!-- Línea decorativa vertical -->
+                <div class="flex justify-center mt-16">
+                    <div class="h-12 w-1 bg-color-global" ></div>
+                </div>
              </div>
          </section>
     </main>

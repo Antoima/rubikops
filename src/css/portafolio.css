@@ -34,6 +34,15 @@
   text-align: center;
 }
 
+/* Cambiar el color de los puntos de paginación del carrusel */
+.swiper-pagination-bullet {
+  background-color: rgb(6, 12, 44); /* Color de los puntos inactivos */
+}
+
+.swiper-pagination-bullet-active {
+  background-color: rgb(102, 252, 241); /* Color del punto activo */
+}
+
 .perspective {
   perspective: 1000px;
 }
