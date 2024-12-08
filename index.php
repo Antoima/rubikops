@@ -30,7 +30,7 @@
                         <div class="flex space-x-4">
                             <a href="#" class="text-white hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">INICIO</a>
                             <a href="#servicios" class="text-white hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">SERVICIOS</a>
-                            <a href="#" class="text-white hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">QUIENES SOMOS</a>
+                            <a href="#quienes-somos" class="text-white hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">¿QUIÉNES SOMOS?</a>
                             <a href="#" class="text-white hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">CONTACTANOS</a>
                         </div>
                     </div>
@@ -44,7 +44,7 @@
             <div id="menu" class="hidden sm:hidden">
                 <a href="#" class="block text-white hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-base font-medium">INICIO</a>
                 <a href="#servicios" class="block text-white hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-base font-medium">SERVICIOS</a>
-                <a href="#" class="block text-white hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-base font-medium">QUIENES SOMOS</a>
+                <a href="#quienes-somos" class="block text-white hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-base font-medium">¿QUIÉNES SOMOS?</a>
                 <a href="#" class="block text-white hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-base font-medium">CONTACTANOS</a>
             </div>
         </div>
@@ -231,6 +231,75 @@
                 <div class="flex justify-center mt-16">
                     <div class="h-12 w-1 bg-color-global" ></div>
                 </div>
+             </div>
+         </section>
+         <!-- Sección de Quiénes Somos -->
+         <section id="quienes-somos" class="py-12 bg-navbar-color">
+             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                 <div class="flex flex-col md:flex-row items-center mb-8">
+                     <h2 class="text-3xl md:text-5xl font-bold text-white relative pl-4 md:pl-10">
+                         <span class="absolute left-0 top-1/2 transform -translate-y-1/2 h-1 w-4 md:w-8 bg-color-global"></span>
+                         ¿Quiénes somos?
+                     </h2>
+                 </div>
+                 <p class="text-lg text-color-global mb-8">¿Qué y quiénes son Rubikops?</p>
+                 <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                     <!-- Parte izquierda: Imagen con texto -->
+                     <div class="flex flex-col justify-center items-center bg-gray-100 p-6 rounded-lg shadow-lg">
+                         <img src="src/img/trabajo_equipo.png" alt="Trabajo en Equipo" class="mb-4">
+                         <h3 class="text-xl font-semibold mb-2">Trabajo en Equipo</h3>
+                         <p>Creativos comprometidos</p>
+                     </div>
+                     <!-- Parte derecha: Dos imágenes -->
+                     <div class="flex flex-col space-y-4">
+                         <div class="bg-gray-100 p-6 rounded-lg shadow-lg">
+                             <img src="src/img/filosofia.png" alt="Filosofía" class="mb-4">
+                             <h3 class="text-xl font-semibold mb-2">Filosofía</h3>
+                             <p>La confianza da resultados</p>
+                         </div>
+                         <div class="bg-gray-100 p-6 rounded-lg shadow-lg">
+                             <img src="src/img/oficinas.png" alt="Oficinas" class="mb-4">
+                             <h3 class="text-xl font-semibold mb-2">Oficinas</h3>
+                             <p>En algún lugar del mundo</p>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+         </section>
+         
+         <!-- Explicación de Quiénes Somos -->
+         <section class="py-12 bg-navbar-color">
+             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                 <div class="grid grid-cols-3 gap-4">
+                     <!-- Primera columna -->
+                     <div class="flex flex-col items-center relative">
+                         <div class="h-full w-1 bg-color-global absolute right-0 top-0"></div>
+                         <h3 class="text-2xl font-bold text-white mt-4">¿Quiénes somos?</h3>
+                         <p class="text-white mt-2 text-justify pr-4">Somos una empresa dedicada a enteder los requerimientos
+                             y necesidades del cliente en el Rubikops es su agencia digital de referencia para
+                              todo lo relacionado con desarrollo web, diseño gráfico y creación de contenido. 
+                              Con el objetivo de hacer realidad sus ideas digitales, ofrecemos un servicio atractivo 
+                              y amigable. Aprovechando plataformas como WordPress y DreamHost, junto con el conjunto de 
+                              herramientas de Google, creamos sitios web dinámicos y optimizamos la presencia en línea 
+                              para generar resultados.</p>
+                     </div>
+                     <!-- Segunda columna -->
+                     <div class="flex flex-col items-center relative">
+                         <div class="h-full w-1 bg-color-global absolute right-0 top-0"></div>
+                         <h3 class="text-2xl font-bold text-white mt-4">Nuestra Visión</h3>
+                         <p class="text-white mt-2 text-justify pr-4">Ser la agencia digital líder conocida por transformar ideas innovadoras 
+                            en experiencias digitales impactantes, fomentando el crecimiento y el éxito de nuestros clientes 
+                            en todo el mundo.</p>
+                     </div>
+                     <!-- Tercera columna -->
+                     <div class="flex flex-col items-center">
+                         <h3 class="text-2xl font-bold text-white mt-4">Nuestra Misión</h3>
+                         <p class="text-white mt-2 text-justify pr-4">Nuestra misión es capacitar a personas y empresas con soluciones digitales
+                             de vanguardia, entregadas con un compromiso con la excelencia, la creatividad y un servicio al cliente 
+                             incomparable. A través de asociaciones colaborativas y una búsqueda incesante de innovación, 
+                             nos esforzamos por hacer que el mundo digital sea más accesible, atractivo y gratificante para todos.</p>
+                     </div>
+                 </div>
              </div>
          </section>
     </main>
