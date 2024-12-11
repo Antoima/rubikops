@@ -5,7 +5,9 @@ use PHPMailer\PHPMailer\Exception;
 require '../../vendor/autoload.php';
 
 // Cargar configuración
-$config = require 'config.php';
+//$config = require 'config.php';
+$config = include('/home/dh_292vea/configuracion/config.php');
+
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $name = filter_var(trim($_POST['name'] ?? ''), FILTER_SANITIZE_STRING);
