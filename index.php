@@ -17,6 +17,12 @@
     <link href="src/css/custom.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
+        <!-- ... otras etiquetas en el head ... -->
+        <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+            <!-- Incluir CSS de Toastr -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
@@ -39,7 +45,7 @@
                             <a href="#" class="text-white hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">INICIO</a>
                             <a href="#servicios" class="text-white hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">SERVICIOS</a>
                             <a href="#quienes-somos" class="text-white hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">¿QUIÉNES SOMOS?</a>
-                            <a href="#" class="text-white hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">CONTACTANOS</a>
+                            <a href="#contacto" class="text-white hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">CONTACTANOS</a>
                         </div>
                     </div>
                     <!-- Botón de menú para dispositivos móviles -->
@@ -53,7 +59,7 @@
                 <a href="#" class="block text-white hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-base font-medium">INICIO</a>
                 <a href="#servicios" class="block text-white hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-base font-medium">SERVICIOS</a>
                 <a href="#quienes-somos" class="block text-white hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-base font-medium">¿QUIÉNES SOMOS?</a>
-                <a href="#" class="block text-white hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-base font-medium">CONTACTANOS</a>
+                <a href="#contacto" class="block text-white hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-base font-medium">CONTACTANOS</a>
             </div>
         </div>
     </nav>
@@ -302,7 +308,7 @@
                          <div class="h-1 w-full bg-color-global mt-4 md:h-full md:w-1 md:right-0 md:top-0 md:absolute"></div>
                      </div>
                      <!-- Tercera columna -->
-                     <div class="flex flex-col items-center">
+                     <div class="flex flex-col items-center relative">
                          <h3 class="text-2xl font-bold text-white mt-4">Nuestra Misión</h3>
                          <p class="text-white mt-2 text-justify pr-4">Nuestra misión es capacitar a personas y empresas con soluciones digitales
                              de vanguardia, entregadas con un compromiso con la excelencia, la creatividad y un servicio al cliente 
@@ -314,10 +320,119 @@
                  </div>
              </div>
          </section>
+
+         <!-- Nueva sección de información -->
+         <section class="py-48 bg-gray-100 relative" style="background-image: url('src/img/laptop_computer.webp'); background-size: cover; background-position: center;">
+             <div class="absolute inset-0 bg-black opacity-90"></div> <!-- Capa azul con transparencia -->
+             <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                 <div class="flex flex-col items-center relative">
+                     <!-- Línea vertical decorativa -->
+                     <div class="h-16 w-1 bg-color-global mb-4" data-aos="fade-in"></div>
+                     <h2 class="text-6xl font-bold text-center mb-8 text-white" data-aos="fade-in">¿Algún proyecto en mente?<br>¡Haznos saber!</h2>
+                     <div class="flex space-x-4 mb-8" data-aos="slide-up">
+                         <a href="#" class="text-blue-300 hover:text-blue-500 text-2xl"><i class="fab fa-twitter"></i></a>
+                         <a href="#" class="text-blue-300 hover:text-blue-500 text-2xl"><i class="fab fa-facebook-f"></i></a>
+                         <a href="https://www.instagram.com/rubik_ops" class="text-blue-300 hover:text-blue-500 text-2xl"><i class="fab fa-instagram"></i></a>
+                         <a href="#" class="text-blue-300 hover:text-blue-500 text-2xl"><i class="fab fa-youtube"></i></a>
+                     </div>
+                    <a href="#contacto" class="px-6 py-3 border-2 border-blue-300 text-white font-semibold rounded-full hover:bg-blue-600" style="border-color: rgb(102,252,241);" data-aos="bounce">¡QUIERO SABER MAS!</a>                 
+                </div>
+             </div>
+         </section>
+
+         <!-- Sección de Contacto -->
+         <section id="contacto" class="py-24 bg-gray-900 text-white">
+             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                 <h2 class="text-3xl font-bold text-center mb-8" data-aos="fade-in">Contáctanos</h2>
+                 <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                     <div class="flex flex-col justify-center items-center text-center" data-aos="fade-in">
+                         <h3 class="text-xl font-semibold mb-4">¿Tienes alguna pregunta?</h3>
+                         <p class="mb-4">Estamos aquí para ayudarte. Completa el formulario y nos pondremos en contacto contigo lo antes posible.</p>
+                         <p class="mb-4">También puedes enviarnos un correo electrónico a <a href="mailto:info@rubikops.com" class="text-blue-500">info@rubikops.com</a></p>
+                         <p class="mb-4">Horario de atención: Lunes a Viernes, 9:00 AM - 6:00 PM</p>
+                         <blockquote class="italic text-gray-600 mb-4">"Rubikops transformó nuestra presencia digital. ¡Altamente recomendado!" - Cliente Satisfecho</blockquote>
+                         <a href="#faq" class="text-blue-500 underline">Visita nuestras Preguntas Frecuentes</a>
+                     </div>
+                     <form class="bg-gray-800 p-8 rounded-lg shadow-lg" data-aos="slide-in-left">
+                         <div class="mb-4">
+                             <label for="name" class="block text-sm font-medium mb-2">Nombre</label>
+                             <input type="text" id="name" name="name" maxlength="100" class="w-full px-3 py-2 bg-gray-700 text-white rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+                         </div>
+                         <div class="mb-4">
+                             <label for="email" class="block text-sm font-medium mb-2">Correo Electrónico</label>
+                             <input type="email" id="email" name="email" maxlength="100" class="w-full px-3 py-2 bg-gray-700 text-white rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+                         </div>
+                         <div class="mb-4">
+                             <label for="message" class="block text-sm font-medium mb-2">Mensaje</label>
+                             <textarea id="message" name="message" rows="4" maxlength="500" class="w-full px-3 py-2 bg-gray-700 text-white rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" required></textarea>
+                         </div>
+                         <button type="submit" id="submit-button" class="w-full py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-md transition duration-300 ease-in-out" data-aos="pulse">
+                             <span id="button-text">Enviar Mensaje</span>
+                             <span id="spinner" class="hidden">
+                                 <i class="fas fa-spinner fa-spin"></i>
+                             </span>
+                         </button>  
+                     </form>
+                 </div>
+             </div>
+         </section>
+         
     </main>
-    <footer>
-        <!-- Contenido del pie de página -->
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-start">
+                <!-- Logo and Description -->
+                <div class="text-left mb-8 md:mb-0">
+                    <img class="h-8 w-auto mb-4" src="src/img/rubikops_logo.png" alt="Rubikops Logo">
+                    <p>La mejor solución a todos tus proyectos.</p>
+                </div>
+                <!-- Other Footer Content -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 w-full md:w-auto">
+                    <!-- Services -->
+                    <div>
+                        <h4 class="text-lg font-semibold mb-4">Servicios</h4>
+                        <ul>
+                            <li><a href="#" class="hover:underline">Website Development</a></li>
+                            <li><a href="#" class="hover:underline">Platform and CMS Management</a></li>
+                            <li><a href="#" class="hover:underline">Digital Marketing</a></li>
+                            <li><a href="#" class="hover:underline">Graphic Design</a></li>
+                        </ul>
+                    </div>
+                    <!-- Quick Access -->
+                    <div>
+                        <h4 class="text-lg font-semibold mb-4">Acceso Rápido</h4>
+                        <ul>
+                            <li><a href="#" class="hover:underline">Inicio</a></li>
+                            <li><a href="#servicios" class="hover:underline">Servicios</a></li>
+                            <li><a href="#quienes-somos" class="hover:underline">¿Quiénes somos?</a></li>
+                            <li><a href="#" class="hover:underline">Contáctanos</a></li>
+                            <li><a href="#" class="hover:underline">Información y Ayuda</a></li>
+                        </ul>
+                    </div>
+                    <!-- Contact -->
+                    <div>
+                        <h4 class="text-lg font-semibold mb-4">Contacto</h4>
+                        <ul>
+                            <li><i class="fas fa-map-marker-alt"></i> Medellín, Colombia</li>
+                            <li><i class="fas fa-phone-alt"></i> +573242629236</li>
+                            <li><i class="fas fa-envelope"></i> contact@rubikops.com</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-8 flex justify-between items-center">
+                <p class="text-sm">© 2023 Rubikops. Todos los derechos reservados.</p>
+                <div class="flex space-x-4">
+                    <a href="#" class="text-white hover:text-blue-500"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-white hover:text-blue-500"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/rubik_ops" class="text-white hover:text-blue-500"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="text-white hover:text-blue-500"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
     </footer>
+    <!-- End of Footer -->
     <!-- Modal -->
     <div id="projectModal" class="hidden">
       <div class="modal-content">
@@ -334,6 +449,71 @@
     </div>
     <script src="src/js/navbar.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        <!-- ... contenido del body ... -->
+        <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Incluir JS de Toastr -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+    <script>
+        document.querySelector('form').addEventListener('submit', function(event) {
+            var submitButton = document.getElementById('submit-button');
+            var buttonText = document.getElementById('button-text');
+            var spinner = document.getElementById('spinner');
+    
+            // Deshabilitar el botón de envío
+            submitButton.disabled = true;
+    
+            // Mostrar el spinner y ocultar el texto del botón
+            buttonText.classList.add('hidden');
+            spinner.classList.remove('hidden');
+        });
+    </script>
+    <script>
+    $(document).ready(function() {
+        $('form').on('submit', function(e) {
+            e.preventDefault();
+    
+            var submitButton = $('#submit-button');
+            var buttonText = $('#button-text');
+            var spinner = $('#spinner');
+    
+            // Deshabilitar el botón de envío
+            submitButton.prop('disabled', true);
+    
+            // Mostrar el spinner y ocultar el texto del botón
+            buttonText.addClass('hidden');
+            spinner.removeClass('hidden');
+    
+            $.ajax({
+                type: 'POST',
+                url: 'src/phpMd/contacto.php',
+                data: $(this).serialize(),
+                dataType: 'json',
+                success: function(response) {
+                    if (response.status === 'success') {
+                        toastr.success(response.message);
+                        $('form')[0].reset();
+                    } else {
+                        toastr.error(response.message);
+                    }
+                },
+                error: function() {
+                    toastr.error('Hubo un error al procesar el formulario.');
+                },
+                complete: function() {
+                    // Restaurar el estado del botón
+                    submitButton.prop('disabled', false);
+                    buttonText.removeClass('hidden');
+                    spinner.addClass('hidden');
+                }
+            });
+        });
+    });
+    </script>
    <script src="src/js/portafolio.js"></script>
 </body>
 </html>
