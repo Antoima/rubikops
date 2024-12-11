@@ -14,6 +14,34 @@
   color: rgb(102, 252, 241);
 }
 
+.bg-img-who-creating {
+  background-image: url("../img/creating_graphic.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
+}
+
+.bg-img-who-computer {
+  background-image: url("../img/website_development.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
+}
+
+.bg-img-who-website {
+  background-image: url("../img/computer-group.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
+}
+
+.seccion-who-we-are {
+  height: 700px;
+}
+
 @keyframes fall {
   0% {
     opacity: 0;
