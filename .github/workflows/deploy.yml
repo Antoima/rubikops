@@ -3,7 +3,7 @@ name: Deploy to DreamHost
 on:
   push:
     branches:
-      - main  # Cambia esto si usas otra rama
+      - main # Cambia esto si usas otra rama
 
 jobs:
   deploy:
@@ -16,8 +16,18 @@ jobs:
         env:
           DREAMHOST_USER: ${{ secrets.DREAMHOST_USER }}
           DREAMHOST_PASS: ${{ secrets.DREAMHOST_PASS }}
-          DREAMHOST_HOST: 'iad1-shared-b8-23.dreamhost.com'
-          DREAMHOST_DOMAIN: 'alex.rubikops.com'
+          DREAMHOST_HOST: "iad1-shared-b8-23.dreamhost.com"
+          DREAMHOST_DOMAIN: "alex.rubikops.com"
         run: |
           echo "Deploying to DreamHost..."
-          sshpass -p $DREAMHOST_PASS scp -o StrictHostKeyChecking=no -r ./* $DREAMHOST_USER@$DREAMHOST_HOST:/home/$DREAMHOST_USER/$DREAMHOST_DOMAIN
+          rsync -avz --delete -e "sshpass -p $DREAMHOST_PASS ssh -o StrictHostKeyChecking=no" ./ $DREAMHOST_USER@$DREAMHOST_HOST:/home/$DREAMHOST_USER/$DREAMHOST_DOMAIN
+
+      - name: Verify Deployment
+        run: |
+          echo "Verifying deployment..."
+          curl -I https://alex.rubikops.com | grep "200 OK"
+
+      - name: Notify Success
+        if: success()
+        run: |
+          echo "Deployment successful!" # Aquí podrías integrar con un servicio de notificaciones
