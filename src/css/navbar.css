@@ -16,3 +16,10 @@
   #menu {
   }
 }
+.navbar {
+  background-color: rgba(26, 4, 93, 0.9);
+  transition: background-color 0.3s, color 0.3s;
+  width: 100%;
+  max-width: 100vw;
+  overflow-x: hidden;
+}
