@@ -6,13 +6,13 @@
     <meta name="description" content="Rubikops - Your partner in digital development. We offer branding, web design, platform management, and more.">
     <meta name="google-site-verification" content="jq5SnVN9Y_2i6LfrPdFVP9k7ng7EFmZsnayAJvPiQNE" />
     <title>Rubikops</title>
+    <link href="src/css/custom.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link href="src/css/navbar.css" rel="stylesheet">
     <link href="src/css/services.css" rel="stylesheet">
     <link href="src/css/portafolio.css" rel="stylesheet">
     <link href="src/css/portafolioMobile.css" rel="stylesheet">
-    <link href="src/css/custom.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
@@ -73,16 +73,16 @@
 
 <script src="src/js/custom.js"></script>
 <script src="src/js/navbar.js"></script>
-<script src="src/js/presentation.js"></script>
-<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script src="src/js/presentation.js" ></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js" ></script>
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js" ></script>
 <script>
     AOS.init();
 </script>
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
-<script src="src/js/contacto.js"></script>
-<script src="src/js/portafolio.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" ></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js" ></script>
+<script src="src/js/contacto.js" ></script>
+<script src="src/js/portafolio.js" ></script>
 
 </body>
 </html>
