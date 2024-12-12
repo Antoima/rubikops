@@ -35,8 +35,8 @@
     <?php include 'sections/presentation.php'; ?>
     <?php include 'sections/service.php'; ?>
 
-    <div class="bg-black h-10 flex items-center justify-center relative overflow-hidden">
-        <span class="text-white text-2xl font-bold">
+    <div class="bg-black h-10 flex items-center justify-center relative overflow-hidden" >
+        <span class="text-white text-2xl font-bold" data-aos="fade-down" data-aos-delay="200">
             <span class="animate-fall" style="animation-delay: 0s;">R</span>
             <span class="animate-fall" style="animation-delay: 0.2s;">u</span>
             <span class="animate-fall" style="animation-delay: 0.4s;">b</span>

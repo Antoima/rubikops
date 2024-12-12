@@ -1,4 +1,4 @@
-<section id="quienes-somos" class="py-12 bg-navbar-color">
+<section id="quienes-somos" class="py-12 bg-navbar-color overflow-hidden">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex flex-col md:flex-row items-center mb-8">
             <h2 class="text-3xl md:text-5xl font-bold text-white relative pl-4 md:pl-10" data-aos="fade-right" data-aos-duration="1000">
