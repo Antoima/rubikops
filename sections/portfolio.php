@@ -1,12 +1,13 @@
 <section id="portafolio" class="py-24 bg-portafolio">
              <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="flex flex-col md:flex-row items-center mb-8">
-                    <h2 class="text-3xl md:text-5xl font-bold text-white relative pl-4 md:pl-10">
+                    <h2 class="text-3xl md:text-5xl font-bold text-white relative pl-4 md:pl-10" data-aos="fade-right" data-aos-duration="1000">
                         <span class="absolute left-0 top-1/2 transform -translate-y-1/2 h-1 w-4 md:w-8 bg-color-global"></span>
                         Portafolio
                     </h2>
                     <a href="https://davidmunera.co" class="mt-4 md:mt-0 md:ml-auto px-4 md:px-6 py-2 md:py-3 border-2 border-blue-500 text-white font-semibold rounded-full hover:bg-blue-600 self-center md:self-auto" style="border-color: rgb(102,252,241);">View All</a>
                 </div>
+                <p class="text-lg text-color-global mb-8" data-aos="fade-up" data-aos-delay="200">Participación en proyectos</p>
             <div class="swiper-container py-20">
                     <div class="swiper-wrapper">
                      <div class="swiper-slide group perspective bg-white p-0 rounded-lg cursor-pointer" style="height: 400px; overflow: hidden;" onclick="openModal()">
