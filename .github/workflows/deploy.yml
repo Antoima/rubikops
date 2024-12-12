@@ -25,7 +25,7 @@ jobs:
       - name: Verify Deployment
         run: |
           echo "Verifying deployment..."
-          curl -I https://alex.rubikops.com | grep "200 OK"
+          curl -I --max-time 30 https://alex.rubikops.com | grep "200 OK"
 
       - name: Notify Success
         if: success()
