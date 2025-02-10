@@ -16,8 +16,8 @@ jobs:
         env:
           DREAMHOST_USER: ${{ secrets.DREAMHOST_USER }}
           DREAMHOST_PASS: ${{ secrets.DREAMHOST_PASS }}
-          DREAMHOST_HOST: "iad1-shared-b8-23.dreamhost.com"
-          DREAMHOST_DOMAIN: "alex.rubikops.com"
+          DREAMHOST_HOST: ${{ secrets.DREAMHOST_HOST }}
+          DREAMHOST_DOMAIN: ${{ secrets.DREAMHOST_DOMAIN }}
         run: |
           echo "Deploying to DreamHost..."
           rsync -avz --delete -e "sshpass -p $DREAMHOST_PASS ssh -o StrictHostKeyChecking=no" ./ $DREAMHOST_USER@$DREAMHOST_HOST:/home/$DREAMHOST_USER/$DREAMHOST_DOMAIN
